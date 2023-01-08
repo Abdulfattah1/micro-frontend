@@ -8,7 +8,9 @@ const mount = (el, { onNavigate, defaultHistory, initialEntries }) => {
     });
     ReactDOM.render(<App history={history} />, el);
 
-    history.listen(onNavigate);
+    if (!!onNavigate) {
+        history.listen(onNavigate);
+    }
 
     return {
         onParentNaviate({ pathname }) {
