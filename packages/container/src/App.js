@@ -3,7 +3,7 @@ import MarketingApp from './components/MarketingApp';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import { StylesProvider, createGenerateClassName } from '@material-ui/core';
-
+import Auth from './components/AuthApp';
 const generatedClassName = createGenerateClassName({
     productionPrefix: 'ca'
 })
